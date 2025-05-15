@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  font-family: "IBM Plex Mono", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-padre {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat 3, 1fr;
+}
+.grid-padre .grid-1 {
+  grid-column: 1/6;
+  grid-row: 1/1;
+}
+.grid-padre .grid-2 {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+.grid-padre .grid-3 {
+  grid-column: 1/6;
+  grid-row: 3/3;
+}
+
+.grid-1 .mi-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-self: center;
+  background-color: #1B1B1B;
+  border-radius: 0rem 0rem 1rem 1rem;
+  width: 60rem;
+  padding: 1%;
+}
+.grid-1 .mi-nav div {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+.grid-1 .mi-nav a {
+  color: #9C9C9C;
+}
+.grid-1 .mi-nav .custom-hover:hover {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .grid-2 .main-sobre-mi {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    margin: 12% 20% 8% 20%;
+  }
+  .grid-2 .main-sobre-mi .foto-sobre-mi {
+    box-shadow: 0 -50px 60px -40px rgba(255, 255, 255, 0.5);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+  }
+  .grid-2 .main-sobre-mi .titulo-sobre-mi {
+    color: white;
+    font-weight: bold;
+    font-size: 2.8rem;
+  }
+  .grid-2 .main-sobre-mi .parrafo-sobre-mi {
+    color: #9C9C9C;
+    font-size: 1.2rem;
+  }
+  .grid-2 .main-sobre-mi .div-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.grid-3 footer {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+.grid-3 footer .logos {
+  width: 2rem;
+  transition: all 0.3s ease;
+}
+.grid-3 footer .logos:hover {
+  width: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
