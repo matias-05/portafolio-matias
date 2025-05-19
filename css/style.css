@@ -80,6 +80,24 @@ body {
     gap: 2rem;
   }
 }
+@media (min-width: 1024px) {
+  .grid-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+  .grid-2 .div-titulo .titulo-habilidades {
+    color: white;
+  }
+  .grid-2 .div-logos {
+    display: flex;
+    gap: 5rem;
+  }
+  .grid-2 .div-logos .logos {
+    width: 5rem;
+  }
+}
 .grid-3 footer {
   display: flex;
   flex-direction: row;
