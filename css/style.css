@@ -94,9 +94,8 @@ body {
     display: flex;
     gap: 5rem;
   }
-  .grid-2 .div-logos .logos-habilidades {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 5rem;
+  .grid-2 .div-logos .logos-habilidades:hover {
+    width: 50rem;
   }
 }
 .grid-3 footer {
