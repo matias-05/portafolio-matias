@@ -1,6 +1,6 @@
 @import "variables";
-
-.grid-1 {
+@media(min-width: 1024px) {
+    .grid-1 {
     .mi-nav {
         position: fixed;
         top: 0;
@@ -25,4 +25,6 @@
         }
     }   
 }
+}
+
 

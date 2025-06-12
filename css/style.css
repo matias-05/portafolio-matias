@@ -29,30 +29,31 @@ body {
   grid-row: 3/3;
 }
 
-.grid-1 .mi-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  justify-self: center;
-  background-color: #1B1B1B;
-  border-radius: 0rem 0rem 1rem 1rem;
-  width: 60rem;
-  padding: 1%;
+@media (min-width: 1024px) {
+  .grid-1 .mi-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    justify-self: center;
+    background-color: #1B1B1B;
+    border-radius: 0rem 0rem 1rem 1rem;
+    width: 60rem;
+    padding: 1%;
+  }
+  .grid-1 .mi-nav div {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .grid-1 .mi-nav a {
+    color: #9C9C9C;
+  }
+  .grid-1 .mi-nav .custom-hover:hover {
+    color: white;
+  }
 }
-.grid-1 .mi-nav div {
-  display: flex;
-  flex-direction: row;
-  gap: 8rem;
-}
-.grid-1 .mi-nav a {
-  color: #9C9C9C;
-}
-.grid-1 .mi-nav .custom-hover:hover {
-  color: white;
-}
-
 @media (min-width: 1024px) {
   .grid-2 .main-sobre-mi {
     display: flex;
@@ -170,6 +171,71 @@ body {
 .grid-3 footer .logos:hover {
   width: 2.5rem;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+  .grid2 .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .grid2 .div-titulo .titulo-habilidades {
+    color: white;
+  }
+  .grid2 .logo-facu {
+    width: 18em;
+  }
+  .grid2 .logo-coder {
+    width: 19.2em;
+  }
+  .grid2 .card {
+    justify-self: center;
+    display: flex;
+    padding: 20px;
+    width: 330px;
+    min-height: 370px;
+    border-radius: 20px;
+    background: #131313;
+    box-shadow: 5px 5px 6px rgba(232, 28, 255, 0.5215686275), -5px -5px 6px rgba(232, 28, 255, 0.5215686275);
+    transition: 0.4s;
+  }
+  .grid2 .card:hover {
+    translate: 0 -10px;
+  }
+  .grid2 .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 15px 0 0 10px;
+  }
+  .grid2 .card-image {
+    min-height: 170px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+    display: flex;
+    align-items: center;
+  }
+  .grid2 .card-body {
+    margin: 13px 0 0 10px;
+    color: #636363;
+    font-size: 15px;
+  }
+  .grid2 .footer {
+    float: right;
+    margin: 28px 0 0 18px;
+    font-size: 13px;
+    color: #636363;
+  }
+  .grid2 .by-name {
+    font-weight: 700;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
